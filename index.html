@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thursday Class</title>
+    <title>Tailwind-online-watch-store</title>
+    <!-- Tailwind-installation -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/1ea2c25117.js" crossorigin="anonymous"></script>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primaryColor: '#fff',
-                        secondaryColor: '#374151',
+                        primary: '#2563eb',
+                        secondary: '#fafafa',
+                        dark:'#030712',
+                        grey: '#d6d3d1',
+                        grey2: '#78716c',
+                        background_image: 'https://media.istockphoto.com/id/468698488/photo/mens-accessory-golden-watch-pen-and-mobile-phone-on.jpg?s=612x612&w=0&k=20&c=rWoH9wxp35tZBGKhc9IrpD-UhHazyUzyHzXLERdLqNQ='
                     }
                 } 
             }
@@ -19,50 +30,267 @@
     </script>
 </head>
 <body>
-    <div class="w-full p-4">
-        <nav class="flex justify-between">
-            <h3>MOTUN</h3>
-            <div class="hidden md:flex">
-                <div class="ml-10 text-sm capitalize hover:animate-wiggle hover:text-secondaryColor">HOME</div>
-                <div class="ml-10 text-sm capitalize hover:animate-wiggle hover:text-secondaryColor">ABOUT</div>
-                <div class="ml-10 text-sm capitalize hover:animate-wiggle hover:text-secondaryColor">SKILLS</div>
-                <div class="ml-10 text-sm capitalize hover:animate-wiggle hover:text-secondaryColor">PROJECTS</div>
-                <div class="ml-10 text-sm capitalize hover:animate-wiggle hover:text-secondaryColor">CONTACT</div>
-            </div>
-        </nav>
-    </div>
-      <!-- main section -->
-    <div id="home" class="w-full h-[50vh] text-center">
-        <div class="max-w-[1240px] w-full mx-auto p-2 flex justify-center items-center">
-            <div>
-                <p class="uppercase text-sm text-gray-600">It's great to have you here 😊 !</p>
-                <h2 class="py-4 text-gray-600 text-lg" >Hi, I am <span class="text-[#5651e5]">Motun</span></h2>
-                <h2 class="py-2 text-gray-700 ">A Full-Stack Developer</h2>
-                <p class="py-4 text-gray-600 max-w[70%] m-auto">I am a full-stack developer with a good knowledge in <br> building web application</p>
+    
+  <div class="container-xx bg-secondary font-Roboto p-0">
+       <!-- header section -->
+       <div class="w-full border-b border-[2px]">
+          <nav class=" bg-dark p-3 text-secondary flex  justify-center ">
+             <ul class="flex md:flex-row  flex-col">
+                  <a href="" class="text-secondary ml-4 capitalize hover:animate-wiggle hover:text-primary nav-items nav-link">Home</a>
+                  <a href="" class="text-secondary ml-4 capitalize hover:animate-wiggle hover:text-primary nav-items nav-link">About Us</a>
+                  <a href="" class="text-secondary ml-4 capitalize hover:animate-wiggle hover:text-primary nav-items nav-link">Blog</a>
+                  <a href="" class="text-secondary ml-4 capitalize hover:animate-wiggle hover:text-primary nav-items nav-link">Contact Us</a>
+                 <!-- button -->
+                  <a href=""><button class="bg-primary hover:bg-grey2 ml-4 py-2 px-4 rounded-md">Order Now</button></a>
+             </ul>
 
-                <!-- Icon Connection Section -->
-                <div class="flex justify-between items-center m-auto max-w-[300px]">
-                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a href=""><ion-icon name="logo-github"></ion-icon></a></div>
-                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></div>
-                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a href=""><ion-icon name="logo-twitter"></ion-icon></a></div>
-                    <div class="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-105 ease-in duration-300"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></div>
-                </div>
-            </div>
-        </div>
-    </div>
+              <div class="flex justify-end">
+                  <a href="" class="nav-cart nav-link ml-20"></i>Shopping Cart<i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+          </nav>
 
-    <!-- Content section -->
-    <div class="max-w-[1240px] m-auto grid grid-cols-3 gap-8">
-       <div class="col-span-2">
-           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia vero in laborum et voluptates, nesciunt minima sequi, ullam iste earum exercitationem quidem. Error quam incidunt sint nesciunt quo at similique.
-           Voluptas corrupti consequuntur enim animi repudiandae aspernatur velit, dolores fugit quos laborum, error molestias saepe facere non culpa hic possimus repellendus eaque et ipsam similique facilis provident. Perspiciatis, dolor sunt?</p>
-       </div> 
+          <div id="home" class="logo bg-secondary p-2 text-dark  [30vh] ">
+             <h1 class="font-mono text-4xl py-10 text-normal text-center">BROCK<span class="text-bold ml-2">WATCHES</span></h1>
 
-       <div class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300">
-        <img src="https://images.unsplash.com/photo-1521151716396-b2da27b1a19f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2ZmZXNzaW9uYWwlMjBtZW58ZW58MHx8MHx8fDA%3D" alt="" srcset="" width="200px" height="200px">
+              <div id="product" class=" py-19 my-5">
+                  <ul class="flex md:flex-row flex-col justify-spaces-between mx-20 text-lg">
+                      <li><a href="#" class="ml-10"></a>Top Watches</li>
+                      <li><a href="#" class="ml-10"></a>Female Watches</li>
+                      <li><a href="#" class="ml-10"></a>Male Watches</li>
+                      <li><a href="#" class="ml-10"></a>Childeren Watches</li>
+                    
+                       <div class="px-20 mr-20 rounded-md">
+                          <form>
+                               <input type="b-2 ml-20 text" name="" class="border border-2 border-grey2 pt-2 py-1 w-68" id="search" placeholder=" Search...."><button><span class="inline-flex items-center rounded-ld-md border border-r-2 border-grey2 text-secondary text-sm bg-primary py-2 p-4 pt-2 pb-3 hover:bg-grey2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg></span></button>
+                           </form>
+
+                           
+                       </div>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr>
+     
+
+      <!-- Hero secton -->
+      <div class="container-xx bg-secondary m-0 p-5">
+          <div class="flex justify-center">
+               <img src="https://media.istockphoto.com/id/165853320/photo/wristwatch.jpg?s=612x612&w=0&k=20&c=DgQbRd67gNDR0rdOpywkHDTBzLB3ahw_CsMPANtWyY8=" alt="Watches"  srcset="" width="550px">
+
+              <div class="">
+                  <h1 class="text-6xl text-bold text-center">WATCHES <br> SALES EVENT</h1>
+                  <span class="text-dark flex justify-center ">__________________________________________________</span>
+                
+                  <div>
+                     <p class="py-5 ml-10 pb-2 mb-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam  id <br> quasi sed mollitia perspiciatis laboriosam.  Animi at quos sunt  unde soluta pariatur error, dolorum provident modi cumque atque?</p>
+                  </div>
+
+                  <div class="py-4 text-center"><a href="" class="btn  rounded-md border border-5 border-grey text-secondary hover:bg-grey2 bg-primary py-2 px-10 me">SHOP NOW</a></div>
+              </div>
+          </div>
       </div>
 
-    </div> 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+        <!-- Product section -->
+        <div class="bg-secondary p-4">
+        <h2 class="text-dark text-2xl ml-5 py-5 mb-2">Featured products</h2>
+
+        <div class="container-xl ml-5 mt-8 grid lg:grid-cols-4 gap-5">
+          <div class=" border border-4 rounded-md px-5 py-5 hover:scale-105 duration-300">
+               <img src="https://media.istockphoto.com/id/483134573/photo/wrist-watch.jpg?s=612x612&w=0&k=20&c=vHLR3ddOM-x1a73jv5p1MUluawXFxWWhwGq4uURjET8=" alt="unsplash watch"  srcset="" width="300px">
+
+              <div class="m-4">
+                  <h3 class="py-3">Gold-brown-leather-Watch</h3>
+                  <strong class="text-center py-5 text-grey text-bold">$200.00</strong>
+                  <p>In stock. - Free Shipping.</p>
+
+                  <div class="py-2">
+                      <span class="stars-rating text-2micro flex flex-row"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" class="" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg><span class="ml-3">(0)</span></span>
+                  </div>
+
+                  <div class="py-4"><a href="" class="btn rounded-md border border-5 border-grey text-secondary hover:bg-grey2 bg-primary py-2 px-10 me">ADD TO CART</a></div>
+              </div>
+          </div>
+          
+          <div class=" border border-2 rounded-md px-5 py-5 hover:scale-105 duration-300">
+              <img src="https://media.istockphoto.com/id/471108718/photo/wristwatch.jpg?s=612x612&w=0&k=20&c=rc5L-9MC45iARkRnkF6IwtrU1DgvsBNj7LkuSIRw1oY=" alt="unsplash watch"  srcset="" width="300px">
+
+              <div class="m-4">
+                  <h3 class="py-3">Gold-brown-leather-Watch</h3>
+                  <strong class="text-dark py-5 text-bold">$250.00</strong>
+                  <p>In stock. - Free Shipping.</p>
+
+                  <div class="py-2">
+                      <span class="stars-rating flex 2text-micro flex-row"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" class="" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                      </svg><span class="ml-3">(0)</span></span>
+                  </div>
+
+                  <div class="py-4"><a href="" class="btn rounded-md border border-5 border-grey text-secondary hover:bg-grey2 bg-primary py-2 px-10 me">ADD TO CART</a></div>
+               </div>
+          </div>
+
+          <div class="border border-2 rounded-md px-5 py-5 hover:scale-105 duration-300">
+              <img src="https://media.istockphoto.com/id/175000037/photo/wristwatch.jpg?s=612x612&w=0&k=20&c=gfOZyQ9PD5-kdpsqp-lkn_EB-jEZo4c5LZWjSGzg-yM=" alt="unsplash watch"  srcset="" width="300px">
+
+              <div class="m-4">
+                  <h3 class="py-3">Gold-brown-leather-Watch</h3>
+                  <strong class="text-center py-5 text-dark">$150.00</strong>
+                  <p>In stock. - Free Shipping.</p>
+                  <div class="py-2">
+                       <span class="stars-rating text-2micro flex flex-row"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg><span class="ml-3">(0)</span></span>
+                  </div>
+
+                  <div class="py-4"><a href="" class="btn rounded-md border border-5 border-grey text-secondary hover:bg-grey2 bg-primary py-2 px-10 me">ADD TO CART</a></div>
+              </div>
+          </div>
+
+           <div class="border border-2 rounded-md px-5 py-5 hover:scale-105 duration-300">
+              <img src="https://media.istockphoto.com/id/508541136/photo/wristwatch-on-white-background.jpg?s=612x612&w=0&k=20&c=uZxkNk-bRT749GIN_uP8ZL__CUE-o8Ukb-C5pwna1uQ=" alt="unsplash watch"  srcset="" width="300px">
+
+              <div class="m-4">
+                  <h3 class="py-3">Gold-brown-leather-Watch</h3>
+                  <strong class="text-dark py-5 text-bold">$200.00</strong>
+                  <p>In stock. - Free Shipping.</p>
+                  <div class="py-2">
+                       <span class="stars-rating text-2micro flex flex-row"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" class="" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                       </svg><span class="ml-3">(0)</span></span>
+                  </div>
+
+                  <div class="py-4"><a href="" class="btn rounded-md border border-5 border-grey text-secondary hover:bg-grey2 bg-primary py-2 px-10 me">ADD TO CART</a></div>
+               </div>
+          </div>
+      </div>
+
+     <!-- product backgrund section -->
+      <div class="container-xx bg-dark text-secondary py-5 my-10">
+          <div class="flex md:flex-row flex-col">
+             <div>
+                  <h1 class="text-center py-20 text-5xl">EXCLUSIVE<br><span class="text-6xl">LUXURY WATCHES</span></h1>
+
+                  <div class="py-2 text-center"><a href="" class="btn rounded-md border border-5 border-dark text-secondary hover:bg-grey2 bg-primary py-2 px-10 me">SHOP NOW</a></div>
+              </div>
+              
+              <div class="ml-10">
+                  <img src="https://media.istockphoto.com/id/1419621205/photo/wrist-watch-with-a-leather-strap-on-a-black-background-close-up.jpg?s=612x612&w=0&k=20&c=gKbGV2Ews91wNmwmQKg8giglbIrCRlBxMlp2UwKXy90=" alt="wrist-watch-with-a-leather-strap" srcset="" width="750px">
+             </div>
+          </div>
+      </div>
+
+      <div class="container-lg py-4 px-4">
+      <button><a href="" class="btn btn-lg btn-primary btn-square back-to-top bg-primary px-3 py-3 border border-2 rounded-full hover:bg-grey2">Back To Top</a></button>
+
+      </div>
+
+       <!-- footer section -->
+      <div class="container-xxl footer my-10 py-5">
+          <div class="Contact_section px-4 py-10 grid grid-cols-1 md:grid-cols-2 border-dotted border-2  border-grey2">
+              <div class="sub-items px-2 py-3">
+                    <h3 class="text-xl">Subscribe to our Newsletter</h3>
+
+                  <div id="email" class="py-5">
+                       <input type="email" class="py-2 px-4  w-50 flex-1 rounded-none rounded-md border border-1 border-dark text-sm" id="email" placeholder="  www.example.com"><button><span class="inline-flex items-center hover rounded-lg-md border border-r-0 border-grey2 text-secondary text-sm bg-primary py-2 px-3 hover:bg-grey2">GO</span></button>   
+                   </div>
+
+                   <div class="flex justify-spaces-between gap-10">
+                       <p class="text-md">subcribe<span class="inline-flex items-center text-sm"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                       </svg></a></span></p>
+
+                       <p>unsubcribe<span class="inline-flex items-center text-sm"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" /></svg></a></span></p>
+                  </div>
+              </div>
+
+
+              <div class="social-links">
+                   <h1 class="text-xl items-center">Follow Us</h1>
+
+                  <div class="links py-4 m-4">
+                      <a href=""><button class="border py-1 px-1 border-2 rounded-sm text-3xl border-grey2  hover:scale-105 duration-300"><ion-icon name="logo-facebook"></ion-icon></button></a>
+                      <a href=""><button class="border py-1 px-1 border-2 rounded-sm text-3xl border-grey2  hover:scale-105 duration-300"><ion-icon name="logo-instagram"></ion-icon></button></a>
+                      <a href=""><button class="border py-1 px-1 border-2 rounded-sm text-3xl border-grey2 hover:scale-105 duration-300"><ion-icon name="logo-twitter"></ion-icon></button></a>
+                      <a href=""><button class="border py-1 px-1 border-2 rounded-sm text-3xl border-grey2 hover:scale-105 duration-300 "><ion-icon name="logo-pinterest"></ion-icon></button></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class=" border-b-2 border-grey2 py-5">
+            <ul class="flex md:flex-row flex-col items-center justify-center gap-10">
+                <li><a href="https://www.google.com" target="_blank" class="hover:text-grey2">Blog</a></li>
+                <li><a href="https://www.google.com" target="_blank" class="hover:text-grey2">Terms and Condition</a></li>
+                <li><a href="https://www.google.com" target="_blank"class="hover:text-grey2">Become an Afflilate</a></li>
+                <li><a href="https://www.google.com" target="_blank"class="hover:text-grey2">Category Index</a></li>
+            </ul>
+        </div>
+
+      <div class="flex items-center justify-spaces-between gap-4 py-5 px-4 pe-3">
+            <p>Copyright 2023 Sample Store. All Rights Reserved. <a href="https://www.google.com" target="_blank" class=" text-primary hover:text-grey">Powered by Shift4shop</a></p>
+      </div>
+ </div>
+
+   
+   
+    
+    
+    
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
